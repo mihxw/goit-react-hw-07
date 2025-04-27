@@ -1,0 +1,81 @@
+.list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.item {
+    background-color: #1a1a1a;
+    border: 2px solid #ffcc00;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px #ffcc00aa;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffcc00cc;
+}
+
+.selectButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+    font-size: 16px;
+}
+
+.selectButton:hover {
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    box-shadow: 0 0 10px #ffcc00aa;
+}
+
+.loadMoreButton {
+    display: block;
+    margin: 30px auto 0;
+    padding: 12px 30px;
+    font-size: 18px;
+    background-color: #333;
+    color: #ffcc00;
+    border: 2px solid #ffcc00;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.loadMoreButton:hover {
+    background-color: #ffcc00;
+    color: #1a1a1a;
+    box-shadow: 0 0 10px #ffcc00aa;
+}
+
+.empty {
+    text-align: center;
+    color: #ffcc00;
+    font-size: 20px;
+    margin-top: 40px;
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 600px) {
+    .list {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        padding: 10px;
+    }
+
+    .selectButton,
+    .loadMoreButton {
+        width: 100%;
+        font-size: 16px;
+    }
+}

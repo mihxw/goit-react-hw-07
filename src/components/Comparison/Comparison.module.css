@@ -1,0 +1,35 @@
+.comparison {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px auto 0;
+    /* трішки відступу зверху */
+}
+
+/* Стиль окремої картки (буде у CarCard.module.css) */
+
+.empty {
+    text-align: center;
+    color: #c0c0c0;
+    font-size: 22px;
+    margin-top: 50px;
+}
+
+/* Адаптивність для планшетів */
+@media (max-width: 768px) {
+    .comparison {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding: 15px;
+    }
+}
+
+/* Адаптивність для телефонів */
+@media (max-width: 480px) {
+    .comparison {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+}

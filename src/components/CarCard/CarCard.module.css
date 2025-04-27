@@ -1,0 +1,82 @@
+.card {
+    background-color: #1a1a1a;
+    border: 2px solid #b87333;
+    /* мідний колір */
+    border-radius: 16px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 10px #b8733388;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #b87333cc;
+}
+
+.name {
+    font-size: 22px;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.info {
+    font-size: 16px;
+    color: #cccccc;
+    margin: 5px 0;
+}
+
+.buttons {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.editButton {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #333;
+    color: #b87333;
+    border: 2px solid #b87333;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.editButton:hover {
+    background-color: #b87333;
+    color: #1a1a1a;
+    box-shadow: 0 0 10px #b87333aa;
+}
+
+.deleteButton {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #333;
+    color: #ff4d4d;
+    border: 2px solid #ff4d4d;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, box-shadow 0.3s;
+}
+
+.deleteButton:hover {
+    background-color: #ff4d4d;
+    color: #1a1a1a;
+    box-shadow: 0 0 10px #ff4d4daa;
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 600px) {
+    .buttons {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .editButton,
+    .deleteButton {
+        width: 100%;
+    }
+}
