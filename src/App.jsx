@@ -11,7 +11,7 @@ import EditCarForm from './components/EditCarForm/EditCarForm';
 import Section from './components/Section/Section';
 import Loader from './components/Loader/Loader';
 
-import './App.css';
+import styles from './App.module.css';
 
 export default function App() {
   const dispatch = useDispatch();
