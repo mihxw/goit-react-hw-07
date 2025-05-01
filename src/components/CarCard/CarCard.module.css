@@ -1,7 +1,6 @@
 .card {
     background-color: #1a1a1a;
     border: 2px solid #b87333;
-    /* мідний колір */
     border-radius: 16px;
     padding: 20px;
     text-align: center;
@@ -68,7 +67,6 @@
     box-shadow: 0 0 10px #ff4d4daa;
 }
 
-/* Адаптивність для мобільних */
 @media (max-width: 600px) {
     .buttons {
         flex-direction: column;

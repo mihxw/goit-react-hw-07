@@ -7,8 +7,7 @@ export default function EditCarForm() {
   const dispatch = useDispatch();
   const editingCar = useSelector(selectEditingCar);
 
-  if (!editingCar) return null; // якщо нема машини для редагування — не показувати нічого
-
+  if (!editingCar) return null;
   const handleSubmit = (e) => {
     e.preventDefault();
     const form = e.target;

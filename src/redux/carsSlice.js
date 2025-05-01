@@ -1,16 +1,16 @@
 
 import { createSlice } from '@reduxjs/toolkit';
-import { fetchCarMakes } from './carsOperations'; // операція запиту на сервер
+import { fetchCarMakes } from './carsOperations'; 
 
 const carsSlice = createSlice({
   name: 'cars',
   initialState: {
-    allCars: [],        // Всі машини, які приходять з сервера
-    selectedCars: [],   // Машини, які користувач вибрав для порівняння
-    filter: '',         // Текст пошуку
-    editingCar: null,   // Машина, яку ми редагуємо
-    loading: false,     // Стан завантаження
-    error: null         // Стан помилки
+    allCars: [],        
+    selectedCars: [],   
+    filter: '',         
+    editingCar: null,   
+    loading: false,     
+    error: null         
   },
   reducers: {
     setFilter(state, action) {
